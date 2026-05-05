@@ -1,0 +1,22 @@
+# --- Binários e Compilados ---
+# A pasta onde o Eclipse coloca os arquivos .class compilados
+bin/
+*.class
+
+# --- Configurações do Eclipse ---
+# Os metadados e configurações específicas da máquina/ambiente
+.metadata/
+.settings/
+.recommenders/
+
+# Arquivos de projeto do Eclipse
+.project
+.classpath
+
+# --- Arquivos do Sistema Operacional ---
+# Como eu uso Linux Mint, ignorar arquivos de visualização de pastas
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
