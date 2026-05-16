@@ -1,4 +1,4 @@
-package GUI_BFS;
+package BFS;
 
 import java.awt.Color;
 

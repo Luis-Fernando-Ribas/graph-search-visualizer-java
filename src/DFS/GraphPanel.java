@@ -1,7 +1,8 @@
-package GUI_BFS;
+package DFS;
 
 import javax.swing.*;
 import java.awt.*;
+
 
 public class GraphPanel extends JPanel { //Classe responsável por desenhar o grafo na interface gráfica.
 
@@ -36,10 +37,10 @@ public class GraphPanel extends JPanel { //Classe responsável por desenhar o gr
         // nós
         for (Node node : graph.getNodes()) {
 
-            if (node.visited) {
-                g.setColor(Color.RED);
-            } else {
-                g.setColor(Color.BLUE);
+        	if (node.visited) {
+        	    g.setColor(node.visitedColor);
+        	} else {
+                g.setColor(Color.BLACK);
             }
 
             g.fillOval(node.x, node.y, 40, 40);
@@ -53,4 +54,4 @@ public class GraphPanel extends JPanel { //Classe responsável por desenhar o gr
     }
 }
 
-//Essa classe faz a ponte
+//Essa classe faz a ponte entre a lógica do grafo e a visualização.

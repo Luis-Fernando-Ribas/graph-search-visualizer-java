@@ -1,4 +1,4 @@
-package GUI_DFS;
+package DFS;
 
 import java.awt.BorderLayout;
 import java.awt.Color;

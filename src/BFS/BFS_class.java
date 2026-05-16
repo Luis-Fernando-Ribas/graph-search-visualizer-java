@@ -1,19 +1,21 @@
-package GUI_BFS;
+package BFS;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
-public class BFS { //Implementação do algoritmo de Busca em Profundidade (Depth-First Search).
+public class BFS_class { //Implementação do algoritmo de Busca em Largura (Breadth-First Search).
 
     private Graph graph;
 
-    public BFS(Graph graph) {
+    public BFS_class(Graph graph) {
         this.graph = graph;
     }
 
-    public List<Node> executar(Node start) { //A DFS percorre o grafo indo o mais profundo possível em um caminho antes de voltar (backtracking).
-
+    public List<Node> executar(Node start) { 
         List<Node> visitados = new ArrayList<>();
-        Queue<Node> fila = new LinkedList<>(); //Características: Utiliza recursão (ou pilha), explora caminhos completos antes de mudar de direção e pode não encontrar o menor caminho
+        Queue<Node> fila = new LinkedList<>();
 
         fila.add(start);
         visitados.add(start);

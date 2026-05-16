@@ -1,4 +1,4 @@
-package GUI_BFS;
+package DFS;
 
 import java.util.*;
 
@@ -16,7 +16,7 @@ public class Graph { //Classe responsável por representar a estrutura do grafo.
         adjList.get(a).add(b);
         adjList.get(b).add(a);
     }
-    
+
     public List<Node> getNeighbors(Node node) {
         return adjList.getOrDefault(node, new ArrayList<>());
     }
@@ -42,4 +42,4 @@ public class Graph { //Classe responsável por representar a estrutura do grafo.
     }
 }
 
- //Essa abordagem é eficiente para grafos e facilita a implementação dos algoritmos de busca.
+ //Essa abordagem é eficiente para grafos e facilita a implementação dos algoritmos de busca.*/

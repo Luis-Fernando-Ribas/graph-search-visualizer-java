@@ -1,4 +1,4 @@
-	package GUI_DFS;
+package DFS;
 
 import javax.swing.*;
 import java.awt.*;
